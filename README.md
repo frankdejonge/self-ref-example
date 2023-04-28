@@ -24,4 +24,5 @@ The relationships are as followed:
 [[1,2], [2,3], [2,4], [1,4], [4,5], [4,7]]
 ```
 
-So, getting relationship suggestions for Person 7 should include every relation except Person 4
+So, getting relationship suggestions for Person 7 should include every relation
+except Person 4 (already a connection) and Person 6 (no relation).
