@@ -90,7 +90,7 @@ class WelcomeController extends AbstractController
 
             // setting up for th next round
             $fromPeople = array_map(fn($p) => $p->id(), $suggestions);
-            array_push($excludeThesePeople, $fromPeople);
+            array_push($excludeThesePeople, ...$fromPeople);
         }
 
         return new JsonResponse($collectedSuggestions);
